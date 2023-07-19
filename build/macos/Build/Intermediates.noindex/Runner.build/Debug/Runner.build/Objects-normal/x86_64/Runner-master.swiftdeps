@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "90f0c7a9201e961279588bfeacbc61d2dcd858feee35afc06f58d1c70492e18d"
+build_start_time: [1689748790, 107065000]
+build_end_time: [1689748794, 491577000]
+inputs:
+  "/Users/viku/Project/task_1/macos/Flutter/GeneratedPluginRegistrant.swift": [1689748778, 55919611]
+  "/Users/viku/Project/task_1/macos/Runner/AppDelegate.swift": [1686756980, 0]
+  "/Users/viku/Project/task_1/macos/Runner/MainFlutterWindow.swift": [1686756980, 0]

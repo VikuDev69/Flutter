@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "741fbb171c424305c4af0f63e3ec4c17aa3de8ead56b279708d8d665e2f8d328"
+build_start_time: [1689744864, 706652000]
+build_end_time: [1689744884, 892935000]
+inputs:
+  "/Users/viku/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.3.1/darwin/Classes/SharedPreferencesPlugin.swift": [1689145869, 342485095]
+  "/Users/viku/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.3.1/darwin/Classes/messages.g.swift": [1689145869, 343194726]
