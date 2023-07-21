@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_1/components/my_textfield.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:task_1/pages/savedadd.dart';
+import 'package:task_1/pages/profile_page.dart';
 
 class MyAdd extends StatefulWidget {
   const MyAdd({super.key});
@@ -1515,6 +1515,13 @@ class _MyAddState extends State<MyAdd> {
     print('State - $get_state');
   }
 
+  _navigate() async {
+    await Future.delayed(const Duration(milliseconds: 3500), () {});
+    // ignore: use_build_context_synchronously
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => const ProfilePage()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -1768,15 +1775,10 @@ class _MyAddState extends State<MyAdd> {
                         pinController.text,
                         statevalue,
                       );
-
-                      Navigator.pushAndRemoveUntil<dynamic>(
-                        context,
-                        MaterialPageRoute<dynamic>(
-                          builder: (context) => SavedAddress(),
-                        ),
-                        (route) =>
-                            true, //if you want to disable back feature set to false
-                      );
+                      _navigate();
+                      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                          duration: Duration(milliseconds: 3000),
+                          content: Text("New Address Added")));
                     }
                   },
                   color: Colors.black,

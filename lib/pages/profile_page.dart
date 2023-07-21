@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:task_1/pages/login_page.dart';
 import 'package:task_1/pages/contact.dart';
-import 'package:task_1/pages/myadd.dart';
+import 'package:task_1/pages/orderhistory.dart';
+import 'package:task_1/pages/savedadd.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -181,7 +182,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       Navigator.pushAndRemoveUntil<dynamic>(
                         context,
                         MaterialPageRoute<dynamic>(
-                          builder: (context) => MyAdd(),
+                          builder: (context) => SavedAddress(),
                         ),
                         (route) =>
                             true, //if you want to disable back feature set to false
@@ -217,7 +218,16 @@ class _ProfilePageState extends State<ProfilePage> {
                     indent: 70,
                   ),
                   ListTile(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushAndRemoveUntil<dynamic>(
+                          context,
+                          MaterialPageRoute<dynamic>(
+                            builder: (context) => OrderHistory(),
+                          ),
+                          (route) =>
+                              true, //if you want to disable back feature set to false
+                        );
+                      },
                       title: const Text('Order History'),
                       leading: const Icon(Icons.history),
                       iconColor: const Color.fromARGB(255, 237, 64, 122)),
