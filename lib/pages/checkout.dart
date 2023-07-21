@@ -21,7 +21,7 @@ class _CheckOutState extends State<CheckOut> {
           const Row(
             children: [
               SizedBox(
-                height: 100,
+                height: 101,
                 width: 90,
               ),
               SizedBox(
