@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
   static final GlobalKey<FormState> formkey = GlobalKey<FormState>();
 
   // USer List
-  var user_1 = 'test@gmail.com';
+  // var user_1 = 'test@gmail.com';
   // sign user in method
   void signUserIn() {}
 
@@ -50,9 +50,6 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
     // ignore: avoid_print
     print('$getdata');
   }
-
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -111,9 +108,10 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
                             .hasMatch(value) !=
                         true) {
                       return 'enter valid email id';
-                    } else if (value != user_1) {
-                      return 'user Not Found';
                     }
+                    // else if (value != user_1) {
+                    //   return 'user Not Found';
+                    // }
                   },
                 ),
 
